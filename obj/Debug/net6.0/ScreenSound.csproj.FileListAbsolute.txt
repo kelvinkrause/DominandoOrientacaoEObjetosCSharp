@@ -1,0 +1,15 @@
+F:\Estudos\ScreenSound03-projeto-inicial\ScreenSound03-projeto-inicial\ScreenSound\bin\Debug\net6.0\ScreenSound.exe
+F:\Estudos\ScreenSound03-projeto-inicial\ScreenSound03-projeto-inicial\ScreenSound\bin\Debug\net6.0\ScreenSound.deps.json
+F:\Estudos\ScreenSound03-projeto-inicial\ScreenSound03-projeto-inicial\ScreenSound\bin\Debug\net6.0\ScreenSound.runtimeconfig.json
+F:\Estudos\ScreenSound03-projeto-inicial\ScreenSound03-projeto-inicial\ScreenSound\bin\Debug\net6.0\ScreenSound.dll
+F:\Estudos\ScreenSound03-projeto-inicial\ScreenSound03-projeto-inicial\ScreenSound\bin\Debug\net6.0\ScreenSound.pdb
+F:\Estudos\ScreenSound03-projeto-inicial\ScreenSound03-projeto-inicial\ScreenSound\obj\Debug\net6.0\ScreenSound.csproj.AssemblyReference.cache
+F:\Estudos\ScreenSound03-projeto-inicial\ScreenSound03-projeto-inicial\ScreenSound\obj\Debug\net6.0\ScreenSound.GeneratedMSBuildEditorConfig.editorconfig
+F:\Estudos\ScreenSound03-projeto-inicial\ScreenSound03-projeto-inicial\ScreenSound\obj\Debug\net6.0\ScreenSound.AssemblyInfoInputs.cache
+F:\Estudos\ScreenSound03-projeto-inicial\ScreenSound03-projeto-inicial\ScreenSound\obj\Debug\net6.0\ScreenSound.AssemblyInfo.cs
+F:\Estudos\ScreenSound03-projeto-inicial\ScreenSound03-projeto-inicial\ScreenSound\obj\Debug\net6.0\ScreenSound.csproj.CoreCompileInputs.cache
+F:\Estudos\ScreenSound03-projeto-inicial\ScreenSound03-projeto-inicial\ScreenSound\obj\Debug\net6.0\ScreenSound.dll
+F:\Estudos\ScreenSound03-projeto-inicial\ScreenSound03-projeto-inicial\ScreenSound\obj\Debug\net6.0\refint\ScreenSound.dll
+F:\Estudos\ScreenSound03-projeto-inicial\ScreenSound03-projeto-inicial\ScreenSound\obj\Debug\net6.0\ScreenSound.pdb
+F:\Estudos\ScreenSound03-projeto-inicial\ScreenSound03-projeto-inicial\ScreenSound\obj\Debug\net6.0\ScreenSound.genruntimeconfig.cache
+F:\Estudos\ScreenSound03-projeto-inicial\ScreenSound03-projeto-inicial\ScreenSound\obj\Debug\net6.0\ref\ScreenSound.dll
