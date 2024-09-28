@@ -34,10 +34,12 @@ namespace ScreenSound.Exercicios.NovaClasseAvaliacao
                     Console.Clear();
                     break;
                 case 1: 
-                    Console.WriteLine("Opção cadastrar Pet");
+                    Console.Clear();
+                    CadastrarPet();
                     break;
                 case 2:
-                    Console.WriteLine("Opção cadastrar Dono");
+                    Console.Clear();
+                    CadastrarDono();
                     break;
                 case 3:
                     Console.WriteLine("Opção Agendar Consulta");
@@ -56,7 +58,7 @@ namespace ScreenSound.Exercicios.NovaClasseAvaliacao
             Console.WriteLine("Cadastrar Pet\n");
             Console.Write("Infome seu nome: ");
             string nomeDono = Console.ReadLine()!;
-            if(donos.ContainsKey(nomeDono))
+            if(donos.ContainsKey(nomeDono)) //Dono existe
             {
                 Console.Write("Informe o nome do animal: ");
                 string nomeAnimal = Console.ReadLine()!;
@@ -69,9 +71,46 @@ namespace ScreenSound.Exercicios.NovaClasseAvaliacao
                         donos[nomeDono]
                         ));
             }
-            else 
+            else //Dono não existe no cadastro
             {
+                Console.WriteLine($"Nome {nomeDono} não encontrado no cadastro.");
+                Console.Write("\nDigite 1 para realizar o cadastro ou 2 para retornar ao menu principal");
+                int opcao = int.Parse(Console.ReadLine()!);
+                switch(opcao)
+                {
+                    case 1:
+                        CadastrarDono();
+                        break;
+                    case 2:                    
+                        Console.WriteLine("Saindo...");
+                        Thread.Sleep(500);
+                        Console.Clear();
+                        break;
+                    default:
+                        Console.WriteLine("Valor inválido");
+                        Thread.Sleep(400);
+                        Console.Clear();
+                        ExibirMenu();
+                        break;
+                }
                 
+            }
+
+        }
+
+        void CadastrarDono()
+        {
+            Console.WriteLine("Cadastro do Dono");
+            Console.Write("Informe o nome: ");
+            string nomeDono = Console.ReadLine()!;
+            if(!donos.ContainsKey(nomeDono))
+            {
+                donos.Add(nomeDono, new Dono(nomeDono, "));
+            }
+            else
+            {
+                Console.WriteLine($"Nome {nomeDono} já existe no cadastro.");
+                return;
             }
 
         }
