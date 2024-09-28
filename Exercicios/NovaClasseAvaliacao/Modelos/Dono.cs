@@ -3,25 +3,25 @@ namespace ScreenSound.Exercicios.NovaClasseAvaliacao.Modelos
     public class Dono
     {
         public string Nome { get; }
-        private List<Pet> pets = new List<Pet>();
+        public List<Pet> Pets {get;}
 
         public Dono(string nome, Pet animal)
         {
             this.Nome = nome;
             if(animal != null)
             {
-                pets.Add(animal);
+                Pets.Add(animal);
             }
             else
             {
-                pets = new List<Pet>();
+                Pets = new List<Pet>();
             }
             
         }
 
         public void AdicionarPet(Pet pet)
         {
-            pets.Add(pet);
+            Pets.Add(pet);
         }
     }
 }

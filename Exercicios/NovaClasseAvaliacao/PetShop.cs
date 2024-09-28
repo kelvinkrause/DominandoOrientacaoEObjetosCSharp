@@ -10,14 +10,16 @@ namespace ScreenSound.Exercicios.NovaClasseAvaliacao
 
         public PetShop()
         {
-
+            ExibirMenu();
         }
 
         void ExibirMenu()
         {
+            Console.Clear();
             Console.WriteLine("Digite 1 para cadastrar um Pet");
             Console.WriteLine("Digite 2 para cadastrar o Dono");
             Console.WriteLine("Digite 3 para agendar uma Consulta");
+            Console.WriteLine("Digite 4 exibir Cadastro do Dono");
             Console.WriteLine("Digite 0 para sair");
             Opcoes();
         }
@@ -42,7 +44,12 @@ namespace ScreenSound.Exercicios.NovaClasseAvaliacao
                     CadastrarDono();
                     break;
                 case 3:
+                    Console.Clear();
                     Console.WriteLine("Opção Agendar Consulta");
+                    break;
+                case 4:
+                    Console.Clear();
+                    ExibirCadastroDono();
                     break;
                 default: 
                     Console.WriteLine("Opção inválida");
@@ -60,16 +67,16 @@ namespace ScreenSound.Exercicios.NovaClasseAvaliacao
             string nomeDono = Console.ReadLine()!;
             if(donos.ContainsKey(nomeDono)) //Dono existe
             {
-                Console.Write("Informe o nome do animal: ");
-                string nomeAnimal = Console.ReadLine()!;
                 Console.Write("Informe a raça do animal: ");
                 string racaAnimal = Console.ReadLine()!;
-                donos[nomeDono].AdicionarPet(
-                    new Pet(
-                        racaAnimal, 
-                        nomeAnimal, 
-                        donos[nomeDono]
-                        ));
+                Console.Write("Informe o nome do animal: ");
+                string nomeAnimal = Console.ReadLine()!;
+                Pet pet = new Pet(racaAnimal, nomeAnimal, donos[nomeDono]);
+                pets.Add(pet);
+                donos[nomeDono].AdicionarPet(pet);
+
+                Console.WriteLine($"{nomeAnimal} cadastrado com sucesso ao Dono {nomeDono}.");
+                RetornarMenu();
             }
             else //Dono não existe no cadastro
             {
@@ -79,12 +86,11 @@ namespace ScreenSound.Exercicios.NovaClasseAvaliacao
                 switch(opcao)
                 {
                     case 1:
+                        Console.Clear();
                         CadastrarDono();
                         break;
-                    case 2:                    
-                        Console.WriteLine("Saindo...");
-                        Thread.Sleep(500);
-                        Console.Clear();
+                    case 2: 
+                        ExibirMenu();
                         break;
                     default:
                         Console.WriteLine("Valor inválido");
@@ -92,10 +98,8 @@ namespace ScreenSound.Exercicios.NovaClasseAvaliacao
                         Console.Clear();
                         ExibirMenu();
                         break;
-                }
-                
+                }   
             }
-
         }
 
         void CadastrarDono()
@@ -105,17 +109,36 @@ namespace ScreenSound.Exercicios.NovaClasseAvaliacao
             string nomeDono = Console.ReadLine()!;
             if(!donos.ContainsKey(nomeDono))
             {
-                donos.Add(nomeDono, new Dono(nomeDono, "));
+                donos.Add(nomeDono, new Dono(nomeDono, null));
+                Console.WriteLine($"Dono {nomeDono} cadastrado com sucesso.");
             }
             else
             {
                 Console.WriteLine($"Nome {nomeDono} já existe no cadastro.");
-                return;
             }
+            RetornarMenu();
+        }
 
+        void RetornarMenu()
+        {
+            Console.Write("\nTecle alguma tecla para retornar ao menu: ");
+            Console.ReadKey(true);
+            ExibirMenu();
         }
 
 
+        void ExibirCadastroDono()
+        {
+            Console.Write("Informe o nome: ");
+            string dono = Console.ReadLine()!;
+            if(dono.Contains(dono))
+            {
+                Console.WriteLine($"Pets do {dono}");
+                donos[dono].Pets.
+                    ForEach(animal => Console.WriteLine($"{animal.Nome}"));
+            }
+            RetornarMenu();
+        }
 
     }
 }
