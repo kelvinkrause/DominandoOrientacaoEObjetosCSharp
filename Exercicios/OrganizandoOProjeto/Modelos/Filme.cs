@@ -4,7 +4,7 @@ namespace ScreenSound.Exercicios.OrganizandoOProjeto.Modelos
     {
         public string Titulo { get; }
         public int Duracao { get; }
-        private List<Artista> Elenco { get; set; }  
+        public List<Artista> Elenco { get; set; }  
 
         public Filme(string titulo, int duracao, List<Artista> elenco)
         {

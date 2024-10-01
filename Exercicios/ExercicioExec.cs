@@ -29,11 +29,15 @@ namespace ScreenSound.Exercicios
                 new Artista("Zoë Saldaña", 46, new List<Filme>())
             }));
 
+            Filme avatar = new Filme("Avatar", 180, new List<Artista>());
+            Filme interestelar = new Filme("Interestelar", 180, new List<Artista>());
+
 
             foreach(Filme filme in filmes)
             {
                 Console.WriteLine($"Filme: {filme.Titulo}");
                 filme.ListarElenco();
+                filme.Elenco.ForEach(elenco => elenco.MostrarFilmesAtuados());
             }
 
 
