@@ -4,9 +4,12 @@ class Album
 {
     private List<Musica> musicas = new List<Musica>();
 
+    public static int qtdAlbum = 0;
+
     public Album(string nome)
     {
         Nome = nome;
+        qtdAlbum++;
     }
 
     public string Nome { get; }
