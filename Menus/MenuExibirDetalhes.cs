@@ -4,7 +4,7 @@ namespace ScreenSound.Menus
 {
     internal class MenuExibirDetalhes : Menu
     {
-        public void ExibirDetalhes(Dictionary<string, Banda> bandasRegistradas)
+        public override void Executar(Dictionary<string, Banda> bandasRegistradas)
         {
             Console.Clear();
             ExibirTituloDaOpcao("Exibir Detalhes da Banda");
