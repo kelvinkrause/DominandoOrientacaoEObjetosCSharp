@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using ScreenSound.Exercicios;
+using ScreenSound.Exercicios.ComportamentosComunsAosMenus.Exercicio2;
 using ScreenSound.Exercicios.NovaClasseAvaliacao;
 using ScreenSound.Exercicios.NovaClasseAvaliacao.Modelos;
 using ScreenSound.Menus;
@@ -10,10 +11,11 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.Clear();
+        new Exercicio2();
         //new ExercicioExec();
         //new PetShop();
         //new Calculadora();
-        //Console.ReadKey(true);
+        Console.ReadKey(true);
 
 
         Banda chaseAtlantic = new("Chase Atlantic");
