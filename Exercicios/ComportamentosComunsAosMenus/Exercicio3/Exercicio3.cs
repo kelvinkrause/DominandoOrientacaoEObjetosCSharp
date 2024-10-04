@@ -24,33 +24,5 @@ namespace ScreenSound.Exercicios.ComportamentosComunsAosMenus.Exercicio3
         }
 
 
-        void MenuOpcoes(ContaBancaria contaBancaria)
-        {
-            Console.WriteLine($"Bem vindo a sua conta corrente ");
-            Console.WriteLine("Digite 1 para realizar um deposito");
-            Console.WriteLine("Digite 2 para realizar um saque");
-            Console.WriteLine("Digite 3 para ver seu saldo");
-            Console.WriteLine("Digite 0 para sair");
-
-            Console.Write("\nEscolha uma opção");
-            string opcaoEscolhida = Console.ReadLine()!;
-
-        }
-
-        void RetornaMenu()
-        {
-            Console.Write("Tecle enter para voltar ao menu. ");
-            Console.ReadKey(true);
-            Console.Clear();
-        }
-
-        void Sair()
-        {
-            Console.Clear();
-            Console.WriteLine("Tchau Tchau");
-            Thread.Sleep(400);
-            Console.Clear();
-        }
-
     }
 }
