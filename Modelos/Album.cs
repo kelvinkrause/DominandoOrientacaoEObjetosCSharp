@@ -1,9 +1,20 @@
 ﻿namespace ScreenSound.Modelos;
 
-class Album
+class Album : IAvaliavel
 {
+    public string Nome { get; }
     private List<Musica> musicas = new List<Musica>();
-
+    private List<Avaliacao> notas = new List<Avaliacao>();
+    public int DuracaoTotal => musicas.Sum(m => m.Duracao);
+    public List<Musica> Musicas => musicas;
+    public double Media 
+    {
+        get 
+        {
+            if (notas.Count == 0) return 0;
+            else return notas.Average(avaliacao => avaliacao.Nota);
+        }
+    }
     public static int qtdAlbum = 0;
 
     public Album(string nome)
@@ -11,10 +22,6 @@ class Album
         Nome = nome;
         qtdAlbum++;
     }
-
-    public string Nome { get; }
-    public int DuracaoTotal => musicas.Sum(m => m.Duracao);
-    public List<Musica> Musicas => musicas;
 
     public void AdicionarMusica(Musica musica)
     {
@@ -30,4 +37,10 @@ class Album
         }
         Console.WriteLine($"\nPara ouvir este álbum inteiro você precisa de {DuracaoTotal}");
     }
+
+    public void AdicionarNota(Avaliacao nota)
+    {
+        throw new NotImplementedException();
+    }
+
 }
