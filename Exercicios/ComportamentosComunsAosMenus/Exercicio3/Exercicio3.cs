@@ -42,10 +42,8 @@ namespace ScreenSound.Exercicios.ComportamentosComunsAosMenus.Exercicio3
                     Sair();
                     break;
                 case "1":
-                    
                     break;
                 case "2":
-                    //Sacar(conta);
                     break;
                 default:
                     Console.WriteLine("Opção inválida");
