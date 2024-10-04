@@ -12,12 +12,7 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.Clear();
-        new Exercicio4();
-        //new ExercicioExec();
-        //new PetShop();
-        //new Calculadora();
-        Console.ReadKey(true);
-
+        //Console.ReadKey(true);
 
         Banda chaseAtlantic = new("Chase Atlantic");
         chaseAtlantic.AdicionarNota(new Avaliacao(10));
@@ -42,6 +37,8 @@ internal class Program
             {4, new MenuAvaliarBanda()},
             {5, new MenuExibirDetalhes()}
         };
+
+        ExibirOpcoesDoMenu();
 
 
         void ExibirLogo()

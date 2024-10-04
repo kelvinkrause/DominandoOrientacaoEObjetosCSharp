@@ -11,6 +11,7 @@ namespace ScreenSound.Exercicios.NovaClasseAvaliacao.Modelos
             Animal = animal;
             Nome = nome;
             Dono = donoDoAnimal;
+            DonosSecundarios = new List<Dono>();
         }
         
     }

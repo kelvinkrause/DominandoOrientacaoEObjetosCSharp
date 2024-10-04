@@ -10,7 +10,7 @@ namespace ScreenSound.Exercicios.NovaClasseAvaliacao.Modelos
             this.Nome = nome;
             if(animal != null)
             {
-                Pets.Add(animal);
+                Pets = new List<Pet>{animal};
             }
             else
             {
