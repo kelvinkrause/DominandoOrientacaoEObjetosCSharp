@@ -11,7 +11,7 @@ namespace ScreenSound.Exercicios.ComportamentosComunsAosMenus.Exercicio3
         */
 
         Dictionary<string, ContaCorrente> contasCorrentes = new Dictionary<string, ContaCorrente>();
-        Dictionary<string, ContaPoupanca> contasPoupancas = new Dictionary<string, ContaPoupanca>();
+        Dictionary<string, ContaBancaria> contasPoupancas = new Dictionary<string, ContaBancaria>();
 
         public Exercicio3()
         {
@@ -20,41 +20,13 @@ namespace ScreenSound.Exercicios.ComportamentosComunsAosMenus.Exercicio3
             ContaPoupanca contaPoupancaKelvin = new ContaPoupanca("Kelvin", 0.01);
             contasPoupancas.Add(contaPoupancaKelvin.Titular, contaPoupancaKelvin);
 
-            MenuPrincipal();
 
         }
 
 
-        void MenuPrincipal()
+        void MenuOpcoes(ContaBancaria contaBancaria)
         {
-            Console.WriteLine("Seja Bem Vindo ao CashBank");
-            Console.WriteLine("Digite 1 para acessar a Conta Corrente");
-            Console.WriteLine("Digite 2 para acessar a Conta Poupança");
-            Console.WriteLine("Digite 0 para sair");
-            Console.Write("Qual conta você deseja acessar: ");
-
-            Console.Write("\nEscolha uma opção");
-            string opcaoEscolhida = Console.ReadLine()!;
-
-            switch (opcaoEscolhida)
-            {
-                case "0":
-                    Sair();
-                    break;
-                case "1":
-                    break;
-                case "2":
-                    break;
-                default:
-                    Console.WriteLine("Opção inválida");
-                    break;
-            }
-            
-        }
-
-        void MenuOpcoes()
-        {
-            Console.WriteLine($"Bem vindo a sua conta corrente {}");
+            Console.WriteLine($"Bem vindo a sua conta corrente ");
             Console.WriteLine("Digite 1 para realizar um deposito");
             Console.WriteLine("Digite 2 para realizar um saque");
             Console.WriteLine("Digite 3 para ver seu saldo");
@@ -62,25 +34,6 @@ namespace ScreenSound.Exercicios.ComportamentosComunsAosMenus.Exercicio3
 
             Console.Write("\nEscolha uma opção");
             string opcaoEscolhida = Console.ReadLine()!;
-
-            switch (opcaoEscolhida)
-            {
-                case "0":
-                    Sair();
-                    break;
-                case "1":
-                    //Depositar();
-                    break;
-                case "2":
-                    //Sacar();
-                    break;
-                case "3":
-                    //ExibirSaldo();
-                    break;
-                default:
-                    Console.WriteLine("Opção inválida");
-                    break;
-            }
 
         }
 

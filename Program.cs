@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using ScreenSound.Exercicios;
 using ScreenSound.Exercicios.ComportamentosComunsAosMenus.Exercicio2;
+using ScreenSound.Exercicios.ComportamentosComunsAosMenus.Exercicio4;
 using ScreenSound.Exercicios.NovaClasseAvaliacao;
 using ScreenSound.Exercicios.NovaClasseAvaliacao.Modelos;
 using ScreenSound.Menus;
@@ -11,7 +12,7 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.Clear();
-        new Exercicio2();
+        new Exercicio4();
         //new ExercicioExec();
         //new PetShop();
         //new Calculadora();
