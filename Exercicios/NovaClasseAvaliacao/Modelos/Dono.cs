@@ -5,7 +5,7 @@ namespace ScreenSound.Exercicios.NovaClasseAvaliacao.Modelos
         public string Nome { get; }
         public List<Pet> Pets {get;}
 
-        public Dono(string nome, Pet animal)
+        public Dono(string nome, Pet? animal)
         {
             this.Nome = nome;
             if(animal != null)

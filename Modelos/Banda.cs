@@ -36,7 +36,7 @@ internal class Banda : IAvaliavel
         Console.WriteLine($"Discografia da banda {Nome}");
         foreach (Album album in albuns)
         {
-            Console.WriteLine($"Álbum: {album.Nome} ({album.DuracaoTotal})");
+            Console.WriteLine($" - Álbum: {album.Nome}, Nota Média: {album.Media}, Duração: {album.DuracaoTotal}");
         }
     }
 }

@@ -13,7 +13,7 @@ namespace ScreenSound.Menus
             Banda banda = new Banda(nomeDaBanda);
             bandasRegistradas.Add(nomeDaBanda, banda);
             Console.WriteLine($"A banda {nomeDaBanda} foi registrada com sucesso!");
-            Thread.Sleep(4000);
+            Thread.Sleep(1000);
             Console.Clear();
         }
     }

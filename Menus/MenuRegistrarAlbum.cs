@@ -16,7 +16,7 @@ namespace ScreenSound.Menus
                 string tituloAlbum = Console.ReadLine()!;
                 bandasRegistradas[nomeDaBanda].AdicionarAlbum(new Album(tituloAlbum));
                 Console.WriteLine($"O álbum {tituloAlbum} de {nomeDaBanda} foi registrado com sucesso!");
-                Thread.Sleep(4000);
+                Thread.Sleep(1000);
                 Console.Clear();
             }
             else

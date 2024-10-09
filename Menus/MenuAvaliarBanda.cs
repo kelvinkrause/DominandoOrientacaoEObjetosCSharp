@@ -28,7 +28,6 @@ namespace ScreenSound.Menus
                 Console.ReadKey();
                 Console.Clear();
             }
-
         }
     }
 }
