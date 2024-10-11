@@ -1,4 +1,5 @@
-﻿using ScreenSound.Exercicios.AlternativaParaAnexarSemelhancas.ModelandoAcessoDeUmPredio;
+﻿using ScreenSound.Exercicios.AlternativaParaAnexarSemelhancas.Exercicio1;
+using ScreenSound.Exercicios.AlternativaParaAnexarSemelhancas.ModelandoAcessoDeUmPredio;
 using ScreenSound.Menus;
 using ScreenSound.Modelos;
 
@@ -7,7 +8,8 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.Clear();
-        //Console.ReadKey(true);
+        new Exercicio1();
+        Console.ReadKey(true);
 
         Banda chaseAtlantic = new("Chase Atlantic");
         chaseAtlantic.AdicionarNota(new Avaliacao(10));
