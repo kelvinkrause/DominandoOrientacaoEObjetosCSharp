@@ -8,8 +8,7 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.Clear();
-        new Exercicio1();
-        Console.ReadKey(true);
+        //Console.ReadKey(true);
 
         Banda chaseAtlantic = new("Chase Atlantic");
         chaseAtlantic.AdicionarNota(new Avaliacao(10));
